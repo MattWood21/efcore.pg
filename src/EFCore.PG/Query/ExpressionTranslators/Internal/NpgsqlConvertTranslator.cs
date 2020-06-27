@@ -22,7 +22,8 @@ namespace Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Inte
             [nameof(Convert.ToInt16)]   = "smallint",
             [nameof(Convert.ToInt32)]   = "int",
             [nameof(Convert.ToInt64)]   = "bigint",
-            [nameof(Convert.ToString)]  = "text"
+            [nameof(Convert.ToString)]  = "text",
+            [nameof(Convert.ToDateTime)]  = "text"
         };
 
         static readonly List<Type> SupportedTypes = new List<Type>
